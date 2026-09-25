@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xếp loại điểm</title>
+</head>
+
+<body>
+    <script>
+        var diem = Number(prompt("Nhập điểm: "));
+        var xeploai;
+
+        if (diem < 0 || diem > 10 || isNaN(diem)) {
+            document.write("Số nhập không hợp lệ");
+        } 
+        else if (diem >= 8) {
+            xeploai = "Giỏi";
+        } 
+        else if (diem >= 6.5) {
+            xeploai = "Khá";
+        } 
+        else if (diem >= 5) {
+            xeploai = "Trung bình";
+        } 
+        else {
+            xeploai = "Yếu";
+        }
+
+        document.write("<br>");
+        document.write(xeploai);
+    </script>
+</body>
+</html>
