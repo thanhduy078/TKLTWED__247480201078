@@ -1,0 +1,39 @@
+<html>
+<head>
+
+<title>Xử lý sự kiện</title>
+
+<script>
+function Bao()
+{
+    window.status="Bạn đang di chuyển chuột vào nút";
+}
+</script>
+
+</head>
+
+<body>
+
+Họ tên:
+<input type="text" name="HoTen"
+onmousemove="window.status='Bạn đang di chuyển chuột vào textbox';">
+
+<br><br>
+
+Giới tính:
+
+<input type="radio" name="GioiTinh"
+onmousemove="window.status='Bạn đang di chuyển chuột vào Nam';">
+Nam
+
+<input type="radio" name="GioiTinh"
+onmousemove="window.status='Bạn đang di chuyển chuột vào Nữ';">
+Nữ
+
+<br><br>
+
+<input type="button" value="Gửi"
+onmousemove="Bao();">
+
+</body>
+</html>
