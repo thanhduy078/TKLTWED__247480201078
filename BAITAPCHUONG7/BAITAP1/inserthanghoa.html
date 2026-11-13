@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thêm hàng hóa</title>
+</head>
+<body>
+
+    <h2>NHẬP THÔNG TIN HÀNG HÓA</h2>
+
+    <form action="inserhanghoa.php" method="POST">
+
+        Mã hàng:
+        <input type="text" name="mahang" required>
+        <br><br>
+
+        Tên hàng:
+        <input type="text" name="tenhang" required>
+        <br><br>
+
+        Mã nhà sản xuất:
+        <input type="text" name="mansx" required>
+        <br><br>
+
+        Năm sản xuất:
+        <input type="number" name="namsx" required>
+        <br><br>
+
+        Giá:
+        <input type="number" name="gia" required>
+        <br><br>
+
+        <input type="submit" value="Thêm hàng hóa">
+        <input type="reset" value="Nhập lại">
+
+    </form>
+
+</body>
+</html>

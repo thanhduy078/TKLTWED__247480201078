@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Cập nhật khách hàng</title>
+
+    <style>
+       
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>CẬP NHẬT KHÁCH HÀNG</h2>
+
+    <form action="UpdateKhachhang.php" method="POST">
+
+        <label>Mã khách hàng:</label>
+        <input type="text" name="MaKH" required>
+        
+
+        <label>Tên khách hàng:</label>
+        <input type="text" name="TenKH" required>
+
+        <label>Địa chỉ:</label>
+        <input type="text" name="DiaChi">
+
+        <label>Điện thoại:</label>
+        <input type="text" name="DienThoai">
+
+        <label>Năm sinh:</label>
+        <input type="number" name="namsinh"
+               min="1900" max="2026">
+
+        <div class="buttons">
+            <button type="submit" class="update">
+                Cập nhật
+            </button>
+
+            <button type="reset" class="reset">
+                Nhập lại
+            </button>
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>

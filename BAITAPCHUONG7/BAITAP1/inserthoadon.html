@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Thêm hóa đơn</title>
+</head>
+<body>
+    <h2>NHẬP THÔNG TIN HÓA ĐƠN</h2>
+
+    <form action="inserthoadon.php" method="POST">
+
+        Mã hóa đơn:
+        <input type="text" name="mahd" required>
+        <br><br>
+
+        Mã khách hàng:
+        <input type="text" name="makh" required>
+        <br><br>
+
+        Mã hàng:
+        <input type="text" name="mahang" required>
+        <br><br>
+
+        Số lượng:
+        <input type="text" name="soluong" min="1" required>
+        <br><br>
+
+        Thành tiền:
+        <input type="number" name="thanhtien" min="0" step="0.01" required>
+        <br><br>
+
+        <input type="submit" value="Thêm hóa đơn">
+        <input type="reset" value="Nhập lại">
+
+    </form>
+</body>
+</html>
